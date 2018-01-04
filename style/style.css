@@ -1,0 +1,30 @@
+header {
+	background: url("../img/hero.jpg") center bottom/cover;
+	height: 100vh;
+	position: relative;
+}
+.hero {
+	padding: 165px 0 175px;
+}
+.icons {
+	margin: 0 auto;
+	position: absolute;
+	bottom: 0;
+
+}
+.photo {
+	background-image: url("../img/hand-phone.jpg");
+	background-position: right bottom;
+	background-repeat: no-repeat;
+}
+#photoapp {
+	background-color: #f5f6f7;
+}
+.next-prev a {
+	position: relative;
+	width: 20px;
+}
+.next-prev a i {
+	color: #000;
+	font-weight: bold;
+}
