@@ -13,26 +13,29 @@
 	<!-- navigation -->
 			<nav class="navbar navbar-expand-lg navbar-dark">
 				<div class="container text-center ">
-					<button class="navbar-toggler" type="button" data-toggle="collapse" data-target="#navContent"">
-						<span class="navbar-toggler-icon"></span>
-					</button>
-					<div class="collapse navbar-collapse" id="navContent">
-						<div class="navbar-nav d-flex justify-content-center pt-5 w-100">
-							<a href="#" class="nav-item nav-link active text-uppercase text-white px-5 pt-4">home</a>
-							<a href="#" class="nav-item nav-link text-uppercase text-white px-5 pt-4">photoapp</a>
-							<a href="#" class="navbar-brand mr-0 px-5 d-none d-lg-inline-block"><img src="img/logo.png"></a>
-							<a href="#" class="nav-item nav-link text-uppercase text-white px-5 pt-4">design</a>
-							<a href="#" class="nav-item nav-link text-uppercase text-white px-5 pt-4">download</a>
+					<div class="d-flex justify-content-between d-lg-inline-block">
+						<a href="#" class="navbar-brand d-lg-none"><img src="img/logo.png"></a>
+						<button class="navbar-toggler" type="button" data-toggle="collapse" data-target="#navContent"">
+							<span class="navbar-toggler-icon"></span>
+						</button>
+					</div>
+					<div class="collapse navbar-collapse w-100" id="navContent">
+						<div class="navbar-nav d-flex justify-content-center pt-5 w-100 nav-link">
+							<a href="#" class="nav-item nav-link active text-uppercase text-white px-5">home</a>
+							<a href="#photoapp" class="nav-item nav-link text-uppercase text-white px-5">photoapp</a>
+							<a href="#" class="navbar-brand mr-0 d-none d-lg-inline-block"><img src="img/logo.png"></a>
+							<a href="#design" class="nav-item nav-link text-uppercase text-white px-5">design</a>
+							<a href="#download" class="nav-item nav-link text-uppercase text-white px-5">download</a>
 						</div>
 					</div>
-					<a href="#" class="navbar-brand d-lg-none"><img src="img/logo.png"></a>
+					
 				</div>
 				
 			</nav>
 	<!-- hero -->
 			<hero class="text-center text-white">
 				<div class="container hero">
-					<h1 class="text-uppercase">your life , a photo</h1>
+					<h1 class="text-uppercase display-4">your life , a photo</h1>
 					<p>print your life in a simple photo</p>
 					<button class="text-uppercase btn btn-success">get started</button>
 				</div>
@@ -44,18 +47,19 @@
 				<a href="#" class="text-white"><i class="fa fa-dribbble" aria-hidden="true"></i></a>
 			</div>
 		</header>
-		<section class="" id="photoapp">
-			<div class="container py-5 photo">
-				<h4 class="text-uppercase pt-5 photoapp-header">rappresent yout life with a<br>simple photo</h4>
-				<p class="w-50 photoapp-p">Lorem ipsum dolor sit amet, consectetur adipiscing elit. Integer porta egestas facilisis. Cras at tortor euismod, scelerisque dui a, bibendum nunc. Ut lacus augue, eleifend non ornare sit amet, vestibulum eu augue. Pellentesque sed iaculis sem, sit amet vehicula ligula. Maecenas turpis lectus, mattis sed magna sit amet, bibendum suscipit ex.</p>
+	<!-- photoapp -->
+		<section id="photoapp">
+			<div class="container photo">
+				<h4 class="text-uppercase m-0 photoapp-header">rappresent youR life with a<br>simple photo</h4>
+				<p>Lorem ipsum dolor sit amet, consectetur adipiscing elit. Integer porta egestas facilisis. Cras at tortor euismod, scelerisque dui a, bibendum nunc. Ut lacus augue, eleifend non ornare sit amet, vestibulum eu augue. Pellentesque sed iaculis sem, sit amet vehicula ligula.</p>
 				<button class="btn btn-success text-uppercase photoapp-button">get started</button>
-			</div>
-			
+			</div>			
 		</section>
-		<section class="pt-5" id="design">
-			<div class="container">
+	<!-- design -->
+		<section id="design">
+			<div class="container design">
 				<div class="row">
-					<div class="col-6">
+					<div class="col-7">
 						<div id="myCarousel1" class="carousel slide" data-ride="carousel">				 
 							<div class="carousel-inner">
 						    	<div class="carousel-item active">
@@ -76,20 +80,19 @@
 						    </div>
 						</div>
 					</div>
-					<div class="col-6">
-						<h4 class="text-uppercase design-header">design</h4>
-						<p class="design-p">Lorem ipsum dolor sit amet, consectetur adipiscing elit. Integer porta egestas facilisis. Cras at tortor euismod, scelerisque dui a, bibendum nunc. Ut lacus augue, eleifend non ornare sit amet, vestibulum eu augue. Pellentesque sed iaculis sem, sit amet vehicula ligula. Maecenas turpis lectus, mattis sed magna sit amet, bibendum suscipit ex.</p>
-						<button class="btn btn-success text-uppercase design-button">get started</button>
+					<div class="col-5">
+						<h4 class="text-uppercase design-header m-0">design</h4>
+						<p class="design-p">Lorem ipsum dolor sit amet, consectetur adipiscing elit. Integer porta egestas facilisis. Cras at tortor euismod, scelerisque dui a, bibendum nunc. Ut lacus augue, eleifend non ornare sit amet, vestibulum eu augue. Pellentesque sed iaculis sem, sit amet vehicula ligula.</p>
+						<button class="btn btn-success text-uppercase design-button">learn more</button>
 						<br>
-						<span>01</span>
-						/
-						<span>05</span>
+						<span class="number">01</span>
+						<span class="number">/ 05</span>
 						<div class="d-flex next-prev">
-							<a class="carousel-control-prev text-dark" href="#myCarousel1" role="button" data-slide="prev">
+							<a class="carousel-control-prev" href="#myCarousel1" role="button" data-slide="prev">
 				    			<i class="fa fa-angle-left" aria-hidden="true"></i>
 				    			<span class="sr-only">Previous</span>
 				  			</a>
-				  			<a class="carousel-control-next text-dark" href="#myCarousel1" role="button" data-slide="next">
+				  			<a class="carousel-control-next" href="#myCarousel1" role="button" data-slide="next">
 				    			<i class="fa fa-angle-right" aria-hidden="true"></i>
 				    			<span class="sr-only">Next</span>
 				  			</a>
@@ -98,17 +101,98 @@
 					</div>				  
 				</div>
 			</div>
+		</section>
 
+	<!-- community -->
+		<section class="" id="community">
+			<div class="container">
+				<div class="row py-5">
+					<div class="col-4 text-center">
+						<img src="img/logo-green.png" alt="logo-green">
+						<h4 class="text-uppercase">our community</h4>
+						<p>Lorem ipsum dolor sit amet, consectetur adipiscing elit. Integer porta egestas facilisis.</p>
+					</div>
+					<div class="col-8 px-0">
+						<div id="myCarousel2" class="carousel slide" data-ride="carousel">				 
+							<div class="carousel-inner">
+						    	<div class="carousel-item active clearfix">
+						      		<img class="d-inline-block " src="img/slider-img-2.jpg" alt="First slide">
+						      		<img class="d-inline-block float-right" src="img/slider-img-1.jpg" alt="First slide">
+
+						    	</div>
+						    	<div class="carousel-item clearfix">
+						      		<img class="d-inline-block " src="img/slider-img-1.jpg" alt="Second slide">
+						      		<img class="d-inline-block float-right" src="img/slider-img-2.jpg" alt="Second slide">
+						    	</div>
+						    </div>
+						    <div class="d-flex next-prev">
+							    <a class="carousel-control-prev text-dark" href="#myCarousel2" role="button" data-slide="prev">
+					    			<i class="fa fa-angle-left" aria-hidden="true"></i>
+					    			<span class="sr-only">Previous</span>
+					  			</a>
+					  			<a class="carousel-control-next text-dark" href="#myCarousel2" role="button" data-slide="next">
+					    			<i class="fa fa-angle-right" aria-hidden="true"></i>
+					    			<span class="sr-only">Next</span>
+					  			</a>
+				  			</div>
+						</div>
+					</div>
+				</div>
+			</div>
 		</section>
-		<section class="container" id="community">
+
+	<!-- subscribe -->
+		<section class="" id="subscribe">
+			<div class="container ">
+				<div class="row">
+					<div class="col text-center d-flex flex-column align-items-center py-5">
+						<h2 class="text-uppercase">subscribe to us community</h2>
+						<form class="form-inline">
+							<div class="form-group mb-2">
+							    <label for="inputEmail" class="sr-only">Your email</label>
+							    <input type="password" class="form-control" id="inputEmail" placeholder="YOUR EMAIL">
+							</div>
+							<button type="submit" class="btn btn-success mb-2"><i class="fa fa-check" aria-hidden="true"></i></button>
+						</form>
+					</div>
+				</div>				
+			</div>
 		</section>
-		<section class="container" id="subscribe">
+
+	<!-- download -->
+		<section class="" id="download">
+			<div class="container">
+				<div class="col text-uppercase text-center">
+					<h4>download it</h4>
+					<p>Lorem ipsum dolor sit amet, consectetur adipiscing elit. Integer porta egestas facilisis. Cras at tortor euismod, scelerisque dui a, bibendum nunc. Ut lacus augue, eleifend non ornare sit amet, vestibulum eu augue. Pellentesque sed iaculis sem, sit amet vehicula ligula. Maecenas turpis lectus, mattis sed magna sit amet, bibendum suscipit ex.</p>
+					<button class="btn btn-success text-uppercase">apple store<span><i class="fa fa-apple" aria-hidden="true"></i></span></button>
+					<button class="btn btn-success text-uppercase">play store<span><i class="fa fa-android" aria-hidden="true"></i></span></button>
+
+				</div>
+			</div>
 		</section>
-		<section class="container" id="download">
-		</section>
-		<footer class="container">
-			
+
+	<!-- footer -->
+		<footer >
+			<div class="container py-5 d-flex justify-content-between">
+				<div class="footer-text">
+					<div class="d-flex justify-content-between text-uppercase">
+						<p>credits</p>
+						<span>|</span>
+						<p>privacy</p>
+						<span>|</span>
+						<p>our teams</p>
+					</div>
+					<p>Copyright by phototime - all right reserved</p>
+
+				</div>
+				<div class="footer-img">
+					<img src="img/logo-green.png" alt="logo-green">
+				</div>
+			</div>
 		</footer>
+
+
 		<script src="js/jquery-3.2.1.slim.min.js"></script>
 		<script src="js/bootstrap.bundle.min.js"></script>
 	</body>
