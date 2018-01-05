@@ -1,30 +1,143 @@
+@import url('https://fonts.googleapis.com/css?family=Heebo:100,300,400,500,700,800,900|Nunito: 200, 300, 400, 600, 700, 800, 900|Quicksand:400,500,700');
+
+body {
+	font-family: 'Nunito', sans-serif;
+	letter-spacing: 2px;
+}
+p {
+	font-size: 13px;
+	font-family: 'Heebo', sans-serif;
+	font-weight: 300;
+	line-height: 25px;
+	padding-bottom: 40px;
+	margin-bottom: 0;
+
+}
+.btn {
+	padding: 15px 40px;
+	font-size: 12px;
+	font-weight: 700;
+	letter-spacing: 2px;
+	background-color: #16a085;
+	border-color: #16a085;
+}
+
+
+
+
+
+
+
+
+
+
+
+
+
+/* header */
 header {
 	background: url("../img/hero.jpg") center bottom/cover;
 	height: 100vh;
 	position: relative;
 }
+
+/* navbar */
+.nav-link a {
+	font-weight: 800;
+	letter-spacing: 3px;
+	font-size: 15px;
+	padding-top: 30px;
+	padding-bottom: 0;
+}
+.nav-link .navbar-brand {
+	
+	padding: 2px 55px 0 55px;
+}
+
+/* hero */
 .hero {
-	padding: 165px 0 175px;
+	padding: 300px 0 175px;
+	
+}
+.hero h1 {
+	font-family: 'Quicksand', sans-serif;
+	font-size: 38px;
+	font-weight: 900;
+	letter-spacing: 6px;
+}
+.hero p {
+	font-family: 'Quicksand', sans-serif;
+	font-size: 18px;
+	font-weight: 700;
+}
+.hero .btn {
+	padding: 15px 32px;
 }
 .icons {
+	padding-bottom: 28px;
 	margin: 0 auto;
 	position: absolute;
 	bottom: 0;
-
+	font-size: 28px;
 }
+.icons i {
+	padding: 0 5px;
+}
+
+/* photoapp */
 .photo {
 	background-image: url("../img/hand-phone.jpg");
 	background-position: right bottom;
 	background-repeat: no-repeat;
+	padding: 95px 0;
 }
 #photoapp {
 	background-color: #f5f6f7;
 }
+.photoapp-header {
+	color: #16a085;
+	font-size: 20px;
+	font-weight: 800;
+	padding-bottom: 40px;
+}
+.photo p {
+	width: 40%;
+}
+
+/* design */
+.design {
+	padding: 130px 0 0 0;
+}
+.design-header {
+	color: #16a085;
+	font-size: 20px;
+	font-weight: 800;
+	padding-bottom: 40px;
+}
+.design-button {
+	margin-bottom: 40px;
+}
+.number {
+	font-size: 12px;
+	font-weight: 900;
+}
 .next-prev a {
 	position: relative;
-	width: 20px;
-}
-.next-prev a i {
+	width: 30px;
 	color: #000;
-	font-weight: bold;
+	opacity: 1;
+
+}
+.next-prev a .fa {
+	color: #000;
+	font-size: 35px;
+	font-weight: 500;
+	
+}
+.carousel-control-next {
+	padding-left: 5px;
+}
+.carousel-control-prev i {
+	position: absolute;
+	left: 0;
 }
