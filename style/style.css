@@ -1,8 +1,9 @@
-@import url('https://fonts.googleapis.com/css?family=Heebo:100,300,400,500,700,800,900|Nunito: 200, 300, 400, 600, 700, 800, 900|Quicksand:400,500,700');
+@import url('https://fonts.googleapis.com/css?family=Heebo:100,300,400,500,700,800,900|Nunito: 200, 300, 400, 600, 700, 800, 900|Quicksand:400,500,700,800,900');
 
 body {
 	font-family: 'Nunito', sans-serif;
 	letter-spacing: 2px;
+
 }
 p {
 	font-size: 13px;
@@ -20,6 +21,10 @@ p {
 	letter-spacing: 2px;
 	background-color: #16a085;
 	border-color: #16a085;
+}
+.container {
+	padding-left: 15px;
+	padding-right: 15px;
 }
 
 
@@ -89,7 +94,7 @@ header {
 	background-image: url("../img/hand-phone.jpg");
 	background-position: right bottom;
 	background-repeat: no-repeat;
-	padding: 95px 0;
+	padding: 95px 15px;
 }
 #photoapp {
 	background-color: #f5f6f7;
@@ -106,7 +111,7 @@ header {
 
 /* design */
 .design {
-	padding: 130px 0 0 0;
+	padding-top: 130px;
 }
 .design-header {
 	color: #16a085;
@@ -123,7 +128,8 @@ header {
 }
 .next-prev a {
 	position: relative;
-	width: 30px;
+	width: 26px;
+	height: 30px;
 	color: #000;
 	opacity: 1;
 
@@ -134,10 +140,139 @@ header {
 	font-weight: 500;
 	
 }
-.carousel-control-next {
-	padding-left: 5px;
+.carousel-control-next i {
+	position: absolute;
+	right: 0;
+	bottom: 0;
 }
 .carousel-control-prev i {
 	position: absolute;
+	bottom: 0;
 	left: 0;
+}
+
+/* community */
+
+#community {
+	background-color: #f5f6f7;
+	padding: 100px 0 130px;
+}
+
+.community-col {
+	padding: 0 60px 0 0;
+}
+.community-img {
+	padding: 70px 0 30px;
+
+}
+.community-header {
+	margin: 0;
+	padding-bottom: 22px;
+	font-size: 17px;
+	font-weight: 900;
+}
+.community-p {
+	line-height: 13px;
+	font-size: 10px;
+	padding: 0 40px 30px;
+	font-weight: 500;
+}
+.mycarousel2 {
+	padding: 0 80px 0 5px;
+}
+
+/* subscribe */
+
+#subscribe {
+	background: url('../img/parallax.jpg') center/cover;
+	background-repeat: no-repeat;
+	padding: 350px 0;
+}
+.subscribe-header{
+	font-family: 'Quicksand', sans-serif;
+	font-size: 29px;
+	letter-spacing: 4px;
+	font-weight: 900;
+	margin: 0;
+	padding-bottom: 32px;
+}
+.subscribe-email {
+	height: 63px;
+	padding: 15px 95px 15px 20px;
+	font-family: 'Quicksand', sans-serif;
+	font-size: 17px;
+	font-weight: 700;
+	letter-spacing: 2px;
+	border-top-right-radius: 0;
+	border-bottom-right-radius: 0;
+}
+.subscribe-button {
+	height: 63px;
+	width: 65px;
+	padding: 10px 15px 5px 15px;
+	font-size: 22px;
+	border-top-left-radius: 0;
+	border-bottom-left-radius: 0;
+}
+
+/* download */
+
+#download {
+	background-color: #f5f6f7;
+	padding: 100px 0 130px;
+}
+.download-header {
+	font-size: 20px;
+	font-weight: 900;
+	letter-spacing: 4px;
+	margin: 0;
+	padding-bottom: 6px;
+}
+.download-p {
+	font-weight: 500;
+	padding: 0 70px 40px;
+}
+.download-btn {
+	width: 240px;
+	height: 55px;
+	padding-left: 20px;
+	font-size: 18px;
+	font-weight: 700;
+	text-align: left;
+	margin: 0;
+	border-top-right-radius: 0;
+	border-bottom-right-radius: 0;
+	background-color: #28ba9d;
+	border-color: #28ba9d;
+}
+.download-link:hover .download-btn {
+	background-color: #16a085;
+	border-color: #16a085;
+}
+
+.download-btn-icon {
+	width: 60px;
+	height: 55px;
+	font-size: 30px;
+	margin-right: 20px;
+	padding: 5px;
+	border-top-left-radius: 0;
+	border-bottom-left-radius: 0;
+}
+
+/* footer */
+
+.footer-p {
+	font-family: 'Quicksand', sans-serif;
+	font-size: 14px;
+	font-weight: 700;
+	padding-bottom: 15px;
+}
+.footer-line {
+	color: #16a085;
+}
+.footer-text {
+	padding-bottom: 0;
+	font-weight: 500;
+	font-size: 15px;
 }
