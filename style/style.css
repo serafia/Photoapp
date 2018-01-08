@@ -3,6 +3,7 @@
 body {
 	font-family: 'Nunito', sans-serif;
 	letter-spacing: 2px;
+	overflow-x: hidden;
 
 }
 p {
@@ -43,10 +44,10 @@ p {
 header {
 	background: url("../img/hero.jpg") center bottom/cover;
 	height: 100vh;
-	position: relative;
 }
 
 /* navbar */
+
 .nav-link a {
 	font-weight: 800;
 	letter-spacing: 3px;
@@ -54,35 +55,26 @@ header {
 	padding-top: 30px;
 	padding-bottom: 0;
 }
-.nav-link .navbar-brand {
-	
+.nav-link .navbar-brand {	
 	padding: 2px 55px 0 55px;
 }
-
-/* hero */
-.hero {
-	padding: 300px 0 175px;
-	
-}
-.hero h1 {
+.hero-center h1 {
 	font-family: 'Quicksand', sans-serif;
 	font-size: 38px;
 	font-weight: 900;
 	letter-spacing: 6px;
 }
-.hero p {
+.hero-center p {
 	font-family: 'Quicksand', sans-serif;
 	font-size: 18px;
 	font-weight: 700;
 }
-.hero .btn {
+.hero-center .btn {
 	padding: 15px 32px;
 }
 .icons {
 	padding-bottom: 28px;
-	margin: 0 auto;
-	position: absolute;
-	bottom: 0;
+	margin: 0 auto;	
 	font-size: 28px;
 }
 .icons i {
@@ -94,7 +86,7 @@ header {
 	background-image: url("../img/hand-phone.jpg");
 	background-position: right bottom;
 	background-repeat: no-repeat;
-	padding: 95px 15px;
+	padding: 105px 15px;
 }
 #photoapp {
 	background-color: #f5f6f7;
@@ -108,6 +100,7 @@ header {
 .photo p {
 	width: 40%;
 }
+
 
 /* design */
 .design {
@@ -275,4 +268,72 @@ header {
 	padding-bottom: 0;
 	font-weight: 500;
 	font-size: 15px;
+}
+
+
+
+
+@media(max-width: 767px) {
+	/* header */
+	/* photoapp */
+	.photo {
+		background-image: none;
+	}
+	.photo p {
+		width: 100%;
+	}
+	/* community */
+	.community-p {
+		padding-left: 100px;
+		padding-right: 100px;
+		padding-bottom: 40px;
+	}
+}
+
+@media(min-width: 768px) and (max-width: 992px) {
+	/* photoapp */
+	.photo p {
+		width: 50%;
+	}
+
+	/* design */
+	.design .carousel {
+		width: 313px;
+	}
+	.design .carousel-inner {
+		width: 313px;
+	}
+	/* community */
+	.community-p {
+		font-size: 12px;
+		padding-right: 280px; 
+		padding-left: 280px;
+		padding-bottom: 50px;
+	}
+	.img {
+		width: 350px;
+	}
+}
+@media(max-width: 992px) {
+	/* header */
+	.nav-link {
+		padding: 20px 10px;
+	}
+	.nav-link a {
+		padding-top: 10px;
+		padding-bottom: 10px;
+	}
+	/* community */
+	.community-col {
+		padding: 0;
+	}
+	.mycarousel2 {
+		padding: 0 5px;
+	}
+	.img {
+		padding: 10px 0;
+	}
+	
+	
+
 }
