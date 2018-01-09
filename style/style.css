@@ -329,6 +329,10 @@ header {
 	.photo p {
 		width: 100%;
 	}
+	/* design */
+	.design {
+		padding-top: 100px;
+	}
 	/* community */
 
 	.community-p {
