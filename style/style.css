@@ -58,7 +58,9 @@ header {
 }
 
 /* navbar */
-
+.navbar-dark .navbar-nav .nav-link {
+	color: #fff;
+}
 .nav-links a {
 	font-weight: 800;
 	letter-spacing: 3px;
@@ -67,7 +69,10 @@ header {
 	padding-top: 30px;
 	padding-bottom: 0;
 }
-.nav-link:hover {
+.navbar-dark .navbar-nav .nav-link.active {
+	color: #16a085;
+}
+.navbar-dark .navbar-nav .nav-link:hover {
 	color: #16a085;
 }
 .nav-links .navbar-brand {	
@@ -305,6 +310,15 @@ header {
 
 @media(max-width: 767px) {
 	/* header */
+	header {
+		
+	}
+	.navbar {
+		background-color: #000;
+	}
+	.nav-links a {
+		padding: 15px 0;
+	}
 	.icons {
 		padding-bottom: 15px;
 	}
@@ -323,7 +337,9 @@ header {
 		padding-bottom: 40px;
 	}
 	/* subscribe */
-
+	.form-group {
+		width: 200px;
+	}
 	.subscribe-email {
 		padding-right: 55px;
 	}
@@ -340,7 +356,10 @@ header {
 		padding-left: 15px;
 		font-size: 11px;
 	}
-
+	.download-btn {
+		padding-right: 20px;
+		width: 190px;
+	}
 	.download-btn, 
 	.download-btn-icon {
 		margin: 10px 0;
@@ -350,6 +369,7 @@ header {
 	/* footer */
 	.footer-img {
 		margin-top: 40px;
+		margin-right: 10px;
 	}
 }
 
