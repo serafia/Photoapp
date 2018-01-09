@@ -303,6 +303,11 @@ header {
 	color: #16a085;
 }
 .footer-text {
+	width: 75%;
+}
+
+.footer-text,
+.footer-text1 {
 	padding-bottom: 0;
 	font-weight: 500;
 	font-size: 15px;
@@ -313,9 +318,6 @@ header {
 
 @media(max-width: 767px) {
 	/* header */
-	header {
-		
-	}
 	.navbar {
 		background-color: #000;
 	}
@@ -378,9 +380,21 @@ header {
 	}
 
 	/* footer */
+	.footer {
+		position: relative;
+	}
+	.footer-text1 {
+		width: 80%;
+	}
+	.footer-text {
+		width: 100%;
+	}
 	.footer-img {
-		margin-top: 40px;
-		margin-right: 10px;
+		/*margin-top: 40px;
+		margin-right: 10px;*/
+		position: absolute;
+		right: 15px;
+		bottom: 48px;
 	}
 }
 
@@ -443,9 +457,7 @@ header {
 	.download-header {
 		padding-bottom: 20px;
 	}
+	/* footer */
 	
 
-}
-@media(min-width: 993px) {
-	
 }
