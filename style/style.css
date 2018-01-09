@@ -15,6 +15,9 @@ p {
 	margin-bottom: 0;
 
 }
+a, i {
+	transition: .3s;
+}
 .btn {
 	padding: 15px 40px;
 	font-size: 12px;
@@ -22,7 +25,15 @@ p {
 	letter-spacing: 2px;
 	background-color: #16a085;
 	border-color: #16a085;
+	color: #fff;
+	transition: .3s;
 }
+
+.btn:hover {
+	background-color: #0f826b;
+	border-color: #0f826b;
+}
+
 .container {
 	padding-left: 15px;
 	padding-right: 15px;
@@ -48,14 +59,18 @@ header {
 
 /* navbar */
 
-.nav-link a {
+.nav-links a {
 	font-weight: 800;
 	letter-spacing: 3px;
 	font-size: 15px;
+	color: #fff;
 	padding-top: 30px;
 	padding-bottom: 0;
 }
-.nav-link .navbar-brand {	
+.nav-link:hover {
+	color: #16a085;
+}
+.nav-links .navbar-brand {	
 	padding: 2px 55px 0 55px;
 }
 .hero-center h1 {
@@ -79,6 +94,9 @@ header {
 }
 .icons i {
 	padding: 0 5px;
+}
+.icons i:hover {
+	color: #16a085;
 }
 
 /* photoapp */
@@ -137,6 +155,11 @@ header {
 	position: absolute;
 	right: 0;
 	bottom: 0;
+}
+.carousel-control-next:hover i,
+.carousel-control-prev:hover i {
+	color: #16a085;
+	text-decoration-color: #16a085; 
 }
 .carousel-control-prev i {
 	position: absolute;
@@ -238,9 +261,10 @@ header {
 	background-color: #28ba9d;
 	border-color: #28ba9d;
 }
-.download-link:hover .download-btn {
-	background-color: #16a085;
-	border-color: #16a085;
+.download-link:hover .download-btn,
+.download-link:hover .download-btn-icon {
+	background-color: #0f826b;
+	border-color: #0f826b;
 }
 
 .download-btn-icon {
@@ -260,6 +284,12 @@ header {
 	font-size: 14px;
 	font-weight: 700;
 	padding-bottom: 15px;
+	text-decoration: none;
+	color: #000;
+}
+.footer-p:hover {
+	color: #16a085;
+	text-decoration: none;
 }
 .footer-line {
 	color: #16a085;
@@ -275,6 +305,9 @@ header {
 
 @media(max-width: 767px) {
 	/* header */
+	.icons {
+		padding-bottom: 15px;
+	}
 	/* photoapp */
 	.photo {
 		background-image: none;
@@ -283,14 +316,49 @@ header {
 		width: 100%;
 	}
 	/* community */
+
 	.community-p {
 		padding-left: 100px;
 		padding-right: 100px;
 		padding-bottom: 40px;
 	}
+	/* subscribe */
+
+	.subscribe-email {
+		padding-right: 55px;
+	}
+	.subscribe-button {
+		margin-bottom: 16px;
+	}
+
+	/* download */
+	#download {
+		padding-bottom: 90px;
+	}
+	.download-p {
+		padding-right: 15px; 
+		padding-left: 15px;
+		font-size: 11px;
+	}
+
+	.download-btn, 
+	.download-btn-icon {
+		margin: 10px 0;
+		
+	}
+
+	/* footer */
+	.footer-img {
+		margin-top: 40px;
+	}
 }
 
 @media(min-width: 768px) and (max-width: 992px) {
+	/* header */
+	.navbar {
+		padding-top: 20px;
+	}
+
 	/* photoapp */
 	.photo p {
 		width: 50%;
@@ -327,13 +395,26 @@ header {
 	.community-col {
 		padding: 0;
 	}
+	.community-img {
+		padding-top: 30px;
+	}
 	.mycarousel2 {
 		padding: 0 5px;
 	}
 	.img {
 		padding: 10px 0;
 	}
-	
+	/* subscribe */
+	#subscribe {
+		padding: 40% 0;
+	}
+	/* download */
+	.download-header {
+		padding-bottom: 20px;
+	}
 	
 
+}
+@media(min-width: 993px) {
+	
 }
