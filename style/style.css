@@ -39,7 +39,10 @@ a, i {
 	padding-right: 15px;
 }
 
-
+.img-fluid {
+	max-width: 100%;
+	height: auto;
+}
 
 
 
@@ -319,6 +322,9 @@ header {
 	.nav-links a {
 		padding: 15px 0;
 	}
+	.hero-center {
+		margin-top: 81px;
+	}
 	.icons {
 		padding-bottom: 15px;
 	}
@@ -362,7 +368,8 @@ header {
 	}
 	.download-btn {
 		padding-right: 20px;
-		width: 190px;
+		width: 170px;
+		font-size: 15px;
 	}
 	.download-btn, 
 	.download-btn-icon {
@@ -398,9 +405,6 @@ header {
 	/* community */
 	.community-p {
 		font-size: 12px;
-		padding-right: 280px; 
-		padding-left: 280px;
-		padding-bottom: 50px;
 	}
 	.img {
 		width: 350px;
@@ -421,6 +425,9 @@ header {
 	}
 	.community-img {
 		padding-top: 30px;
+	}
+	.community-p {
+		padding: 0;
 	}
 	.mycarousel2 {
 		padding: 0 5px;
