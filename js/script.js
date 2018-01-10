@@ -1,12 +1,13 @@
 $(function(){
 	$('body').scrollspy({ target: '#navbar' });
-
+	changeNavbar();
 	$(window).scroll(function() {
 		changeNavbar();
 	});
 
 	function changeNavbar() {
-		var scrollPosition = $(window).scrollTop();
+		var scrollPosition = $(document).scrollTop();
+		console.log(scrollPosition);
 		if(scrollPosition > 0) {
 			$('#navbar').addClass('dark');
 		} else {
