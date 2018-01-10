@@ -1,4 +1,4 @@
-$(function(){
+
 	$('body').scrollspy({ target: '#navbar' });
 	changeNavbar();
 	$(window).scroll(function() {
@@ -20,6 +20,6 @@ $(function(){
 	  var slideActiveNumber = $('div.active').data('number');
 	  slideNumber.text(slideActiveNumber);
 	});
-});
+
 
 
