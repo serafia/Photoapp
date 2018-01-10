@@ -40,11 +40,6 @@ a, i {
 	padding-left: 15px;
 	padding-right: 15px;
 }
-
-.img-fluid {
-	max-width: 100%;
-	height: auto;
-}
 .dark {
 	background-color: rgba(0, 0, 0, 0.9);
 	transition: 1s;
@@ -186,7 +181,7 @@ header {
 }
 
 .community-col {
-	padding: 0 60px 0 0;
+	padding: 0 80px 0 0;
 }
 .community-img {
 	padding: 70px 0 30px;
@@ -205,7 +200,7 @@ header {
 	font-weight: 500;
 }
 .mycarousel2 {
-	padding: 0 80px 0 5px;
+	padding: 0 80px 0 0;
 }
 
 /* subscribe */
