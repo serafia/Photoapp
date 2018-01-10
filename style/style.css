@@ -357,6 +357,9 @@ header {
 		padding-right: 100px;
 		padding-bottom: 40px;
 	}
+	.img {
+		padding: 10px 0;
+	}
 	
 	/* subscribe */
 	
@@ -471,9 +474,7 @@ header {
 	.mycarousel2 {
 		padding: 0 5px;
 	}
-	.img {
-		padding: 10px 0;
-	}
+	
 	
 	/* subscribe */
 	
