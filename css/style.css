@@ -133,8 +133,7 @@ header {
 .next-prev .carousel-control-next:hover i,
 .next-prev .carousel-control-prev:hover i {
   color: #16a085;
-  -webkit-text-decoration-color: #16a085;
-          text-decoration-color: #16a085; }
+  text-decoration-color: #16a085; }
 
 /* community */
 #community {
