@@ -49,40 +49,37 @@ a, i {
 	transition: 1s;
 }
 
-/* header */
-
-header {
-	background: url("../img/hero.jpg") center bottom/cover;
-	height: 100vh;
-		/* navbar */
-
-	#navbar {
-		transition: 1s;
+/* navigation */
+.navbar {
+	transition: 1s;
+	.navbar-brand {
+		padding: 2px 55px 0 55px;
+	}
+	.nav-links {
 		.navbar-brand {
 			padding: 2px 55px 0 55px;
 		}
-		.nav-links {
-			.navbar-brand {
-				padding: 2px 55px 0 55px;
-			}
-			.nav-link {
-				font-weight: 800;
-				letter-spacing: 3px;
-				font-size: 15px;
-				color: #fff;
-				padding-top: 30px;
-				padding-bottom: 0;
-			}
-			.nav-link.active {
-				color: $main-color;
-			}
-			.nav-link:hover {
+		.nav-link {
+			font-weight: 800;
+			letter-spacing: 3px;
+			font-size: 15px;
+			color: #fff;
+			padding-top: 30px;
+			padding-bottom: 0;
+			&:hover {
 				color: $main-color;
 			}
 		}
+		.nav-link.active {
+			color: $main-color;
+		}
 	}
-
-	.hero-center {
+}
+.jumbotron-fluid {
+	background: url("../img/hero.jpg") center bottom/cover;
+	height: 100vh;
+	padding-top: 27%;
+	.jumbotron-center {
 		h1 {
 			font-family: 'Quicksand', sans-serif;
 			font-size: 38px;
@@ -97,10 +94,7 @@ header {
 		.btn {
 			padding: 15px 32px;
 		}
-	}
-
-		
-	 
+	}	 
 	.icons {
 		padding-bottom: 28px;
 		margin: 0 auto;	
@@ -347,18 +341,19 @@ header {
 
 @media(max-width: 767px) {
 	
-	/* header */
-	
-	header {
-		#navbar {
-			background-color: #000;
-			.nav-links {
-				.nav-link {
-					padding: 15px 0;
-				}
+	/* navigation */	
+	.navbar {
+		background-color: #000;
+		.nav-links {
+			.nav-link {
+				padding: 15px 0;
 			}
 		}
-		.hero-center {
+	}
+
+	/* jumbotron */
+	.jumbotron-fluid {
+		.jumbotron-center {
 			margin-top: 81px;
 		}
 		.icons {
@@ -463,12 +458,15 @@ header {
 
 @media(min-width: 768px) and (max-width: 992px) {
 	
-	/* header */
-	header {
-		#navbar {
-			padding-top: 20px;
+	/* navigation */
+	
+	.navbar {
+		padding-top: 20px;
+	}
 
-		}
+	/* jumbotron */
+	.jumbotron-fluid {
+		padding-top: 50%;
 	}
 
 	/* photoapp */
@@ -541,6 +539,13 @@ header {
 			padding-bottom: 20px;
 		}
 	}
-		
+}
 
+@media (min-width: 993px) and (max-width: 1199px) {
+
+	/* jumbotron */
+
+	.jumbotron-fluid {
+		padding-top: 50%;
+	}
 }

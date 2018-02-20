@@ -39,46 +39,47 @@ a, i {
   background-color: rgba(0, 0, 0, 0.9);
   transition: 1s; }
 
-/* header */
-header {
+/* navigation */
+.navbar {
+  transition: 1s; }
+  .navbar .navbar-brand {
+    padding: 2px 55px 0 55px; }
+  .navbar .nav-links .navbar-brand {
+    padding: 2px 55px 0 55px; }
+  .navbar .nav-links .nav-link {
+    font-weight: 800;
+    letter-spacing: 3px;
+    font-size: 15px;
+    color: #fff;
+    padding-top: 30px;
+    padding-bottom: 0; }
+    .navbar .nav-links .nav-link:hover {
+      color: #16a085; }
+  .navbar .nav-links .nav-link.active {
+    color: #16a085; }
+
+.jumbotron-fluid {
   background: url("../img/hero.jpg") center bottom/cover;
   height: 100vh;
-  /* navbar */ }
-  header #navbar {
-    transition: 1s; }
-    header #navbar .navbar-brand {
-      padding: 2px 55px 0 55px; }
-    header #navbar .nav-links .navbar-brand {
-      padding: 2px 55px 0 55px; }
-    header #navbar .nav-links .nav-link {
-      font-weight: 800;
-      letter-spacing: 3px;
-      font-size: 15px;
-      color: #fff;
-      padding-top: 30px;
-      padding-bottom: 0; }
-    header #navbar .nav-links .nav-link.active {
-      color: #16a085; }
-    header #navbar .nav-links .nav-link:hover {
-      color: #16a085; }
-  header .hero-center h1 {
+  padding-top: 27%; }
+  .jumbotron-fluid .jumbotron-center h1 {
     font-family: 'Quicksand', sans-serif;
     font-size: 38px;
     font-weight: 900;
     letter-spacing: 6px; }
-  header .hero-center p {
+  .jumbotron-fluid .jumbotron-center p {
     font-family: 'Quicksand', sans-serif;
     font-size: 18px;
     font-weight: 700; }
-  header .hero-center .btn {
+  .jumbotron-fluid .jumbotron-center .btn {
     padding: 15px 32px; }
-  header .icons {
+  .jumbotron-fluid .icons {
     padding-bottom: 28px;
     margin: 0 auto;
     font-size: 28px; }
-    header .icons i {
+    .jumbotron-fluid .icons i {
       padding: 0 5px; }
-    header .icons i:hover {
+    .jumbotron-fluid .icons i:hover {
       color: #16a085; }
 
 /* photoapp */
@@ -133,7 +134,8 @@ header {
 .next-prev .carousel-control-next:hover i,
 .next-prev .carousel-control-prev:hover i {
   color: #16a085;
-  text-decoration-color: #16a085; }
+  -webkit-text-decoration-color: #16a085;
+          text-decoration-color: #16a085; }
 
 /* community */
 #community {
@@ -246,14 +248,16 @@ header {
 
 /* media quaries */
 @media (max-width: 767px) {
-  /* header */
-  header #navbar {
+  /* navigation */
+  .navbar {
     background-color: #000; }
-    header #navbar .nav-links .nav-link {
+    .navbar .nav-links .nav-link {
       padding: 15px 0; }
-  header .hero-center {
+
+  /* jumbotron */
+  .jumbotron-fluid .jumbotron-center {
     margin-top: 81px; }
-  header .icons {
+  .jumbotron-fluid .icons {
     padding-bottom: 15px; }
 
   /* photoapp */
@@ -311,9 +315,13 @@ header {
       right: 15px;
       bottom: 48px; } }
 @media (min-width: 768px) and (max-width: 992px) {
-  /* header */
-  header #navbar {
+  /* navigation */
+  .navbar {
     padding-top: 20px; }
+
+  /* jumbotron */
+  .jumbotron-fluid {
+    padding-top: 50%; }
 
   /* photoapp */
   #photoapp .photo p {
@@ -349,3 +357,7 @@ header {
   /* download */
   #download .download-header {
     padding-bottom: 20px; } }
+@media (min-width: 993px) and (max-width: 1199px) {
+  /* jumbotron */
+  .jumbotron-fluid {
+    padding-top: 50%; } }
