@@ -1,5 +1,7 @@
 
 $('body').scrollspy({ target: '#navbar' });
+
+
 changeNavbar();
 $(window).scroll(function() {
 	changeNavbar();
@@ -21,6 +23,7 @@ $('#myCarousel1').on('slid.bs.carousel', function () {
 	slideNumber.text(slideActiveNumber);
 });
 
+/* smooth scroll */
 
 $('a[href*="#"]').not('[href="#"]').not('[href*="#myCarousel"]').click(function() {
     if (location.pathname.replace(/^\//,'') == this.pathname.replace(/^\//,'') 
@@ -36,3 +39,11 @@ $('a[href*="#"]').not('[href="#"]').not('[href*="#myCarousel"]').click(function(
         }
     }
 });
+
+
+$('.collapse .nav-links .nav-link').click(function() {
+	$('#navContent').animate({height: '0'} ,400, removeClassShow);
+});
+function removeClassShow() {
+	$(this).removeClass('show');
+}
