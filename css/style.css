@@ -61,7 +61,7 @@ a, i {
 .jumbotron-fluid {
   background: url("../img/hero.jpg") center bottom/cover;
   height: 100vh;
-  padding-top: 27%; }
+  padding-top: 40vh; }
   .jumbotron-fluid .jumbotron-center h1 {
     font-family: 'Quicksand', sans-serif;
     font-size: 38px;
@@ -134,8 +134,7 @@ a, i {
 .next-prev .carousel-control-next:hover i,
 .next-prev .carousel-control-prev:hover i {
   color: #16a085;
-  -webkit-text-decoration-color: #16a085;
-          text-decoration-color: #16a085; }
+  text-decoration-color: #16a085; }
 
 /* community */
 #community {
@@ -255,10 +254,12 @@ a, i {
       padding: 15px 0; }
 
   /* jumbotron */
-  .jumbotron-fluid .jumbotron-center {
-    margin-top: 81px; }
-  .jumbotron-fluid .icons {
-    padding-bottom: 15px; }
+  .jumbotron-fluid {
+    padding-top: 20vh; }
+    .jumbotron-fluid .jumbotron-center {
+      margin-top: 81px; }
+    .jumbotron-fluid .icons {
+      padding-bottom: 15px; }
 
   /* photoapp */
   #photoapp .photo {
@@ -342,6 +343,10 @@ a, i {
   #community .mycarousel2 .img {
     width: 350px; } }
 @media (max-width: 992px) {
+  /* navigation */
+  .navbar .nav-links .nav-link:hover {
+    color: inherit; }
+
   /* community */
   #community .community-col {
     padding: 0; }

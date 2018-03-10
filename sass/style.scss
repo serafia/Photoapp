@@ -78,7 +78,7 @@ a, i {
 .jumbotron-fluid {
 	background: url("../img/hero.jpg") center bottom/cover;
 	height: 100vh;
-	padding-top: 27%;
+	padding-top: 40vh;
 	.jumbotron-center {
 		h1 {
 			font-family: 'Quicksand', sans-serif;
@@ -353,6 +353,7 @@ a, i {
 
 	/* jumbotron */
 	.jumbotron-fluid {
+		padding-top: 20vh;
 		.jumbotron-center {
 			margin-top: 81px;
 		}
@@ -512,7 +513,18 @@ a, i {
 }
 @media(max-width: 992px) {
 	
-	
+	/* navigation */
+	.navbar {
+		.navbar-brand {
+		}
+		.nav-links {
+			.nav-link {
+				&:hover {
+					color: inherit;
+				}
+			}
+		}
+	}
 	
 	/* community */
 	#community {
