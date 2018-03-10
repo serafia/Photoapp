@@ -42,7 +42,10 @@ $('a[href*="#"]').not('[href="#"]').not('[href*="#myCarousel"]').click(function(
 
 
 $('.collapse .nav-links .nav-link').click(function() {
-	$('#navContent').animate({height: '0'} ,400, removeClassShow);
+	if($(window).width()<767) {
+		$('#navContent').animate({height: '0'} ,400, removeClassShow);
+	}
+	
 });
 function removeClassShow() {
 	$(this).removeClass('show');
