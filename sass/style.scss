@@ -48,6 +48,10 @@ a, i {
 	background-color: rgba(0, 0, 0, 0.9);
 	transition: 1s;
 }
+.navbar-dark .navbar-nav .nav-link:focus, 
+.navbar-dark .navbar-nav .nav-link:hover {
+	color: #fff;
+}
 
 /* navigation */
 .navbar {
@@ -66,9 +70,6 @@ a, i {
 			color: #fff;
 			padding-top: 30px;
 			padding-bottom: 0;
-			&:hover {
-				color: $main-color;
-			}
 		}
 		.nav-link.active {
 			color: $main-color;
@@ -513,19 +514,6 @@ a, i {
 }
 @media(max-width: 992px) {
 	
-	/* navigation */
-	.navbar {
-		.navbar-brand {
-		}
-		.nav-links {
-			.nav-link {
-				&:hover {
-					color: inherit;
-				}
-			}
-		}
-	}
-	
 	/* community */
 	#community {
 		.community-col {
@@ -559,5 +547,21 @@ a, i {
 
 	.jumbotron-fluid {
 		padding-top: 50%;
+	}
+}
+
+
+@media (min-width: 1200px) {
+		/* navigation */
+	.navbar {
+		.navbar-brand {
+		}
+		.nav-links {
+			.nav-link {
+				&:hover {
+					color: $main-color;
+				}
+			}
+		}
 	}
 }
